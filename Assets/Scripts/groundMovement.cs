@@ -22,7 +22,7 @@ public class groundMovement : MonoBehaviour
             grounds[i].transform.position += Vector3.left * speed * Time.deltaTime;
             if(grounds[i].transform.position.x <= endPosition.x){
                 grounds[i].transform.position = startPosition;
-                groundSprites[i].Sprite = groundSprites[Random.Range(0, groundSprites.Length)];
+                grounds[i].sprite = groundSprites[Random.Range(0, groundSprites.Length)];
 
             }
 
